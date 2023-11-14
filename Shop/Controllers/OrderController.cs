@@ -31,13 +31,24 @@ public class OrderController : ControllerBase
     }
 
     [HttpPost]
-    public async Task InsertOrder(Order order)
+    public async Task InsertOrder(OrderViewModel orderViewModel)
     {
+        Order order = new Order()
+        {
+            ProductId = orderViewModel.ProductId,
+            UserId = orderViewModel.UserId,
+            CreateDate = orderViewModel.CreateDate
+        };
+        
         await _repo.Add(order);
     }
     [HttpPut]
-    public async Task UpdateOrder(Order order)
+    public async Task UpdateOrder(OrderViewModel orderViewModel)
     {
+        var order =await _repo.GetById(orderViewModel.Id);
+        order.UserId = orderViewModel.UserId;
+        order.ProductId = orderViewModel.ProductId;
+        order.CreateDate = orderViewModel.CreateDate;
         await _repo.Update(order);
     }
 

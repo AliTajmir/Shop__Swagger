@@ -29,7 +29,9 @@ public class OrderRepository:IOrderRepository
         {
 FirstName_User = x.User.FirstName,
 Name_Product = x.Product.Name,
-Id = x.Id
+Id = x.Id,
+ProductId = x.Product.Id,
+UserId = x.User.Id
         }).ToListAsync();
     }
 
