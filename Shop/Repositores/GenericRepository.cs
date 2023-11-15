@@ -10,11 +10,8 @@ public class GenericRepository<T>:IGenericRepository<T> where T:class
     private readonly DbSet<T> _set;
     public GenericRepository(ShopContext shopContext )
     {
-        
-
         _shopContext = shopContext;
         _set = shopContext.Set<T>();
-
     }
     public GenericRepository()
     {

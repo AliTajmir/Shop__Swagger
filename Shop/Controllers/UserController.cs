@@ -57,10 +57,6 @@ public class UserController : ControllerBase
           item.Mobile = userViewModel.Mobile;
           await _repo.Update(item);
           await _repo.SaveChangesAsync();
-
-          
-      
-     
   }
 
   [HttpDelete("{id}")]

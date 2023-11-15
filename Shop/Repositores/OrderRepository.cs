@@ -27,11 +27,11 @@ public class OrderRepository:IOrderRepository
     {
         return await _shopContext.Orders.Include(x => x.Product).Include(x => x.User).Select(x => new OrderViewModel()
         {
-FirstName_User = x.User.FirstName,
-Name_Product = x.Product.Name,
-Id = x.Id,
-ProductId = x.Product.Id,
-UserId = x.User.Id
+            FirstName_User = x.User.FirstName,
+            Name_Product = x.Product.Name,
+            Id = x.Id,
+            ProductId = x.Product.Id,
+            UserId = x.User.Id
         }).ToListAsync();
     }
 
@@ -52,7 +52,6 @@ UserId = x.User.Id
         var item = await _shopContext.Orders.FindAsync(id);
         _shopContext.Orders.Remove(item);
         await this.SaveChangesAsync();
-
     }
 
     public async Task SaveChangesAsync()
