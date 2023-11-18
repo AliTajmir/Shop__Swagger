@@ -3878,11 +3878,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\a\\Desktop\\Shop\\Shop\\Shop.csproj",
+      "projectUniqueName": "C:\\Users\\a\\Downloads\\Compressed\\Shop__Swagger-main\\Shop\\Shop.csproj",
       "projectName": "Shop",
-      "projectPath": "C:\\Users\\a\\Desktop\\Shop\\Shop\\Shop.csproj",
+      "projectPath": "C:\\Users\\a\\Downloads\\Compressed\\Shop__Swagger-main\\Shop\\Shop.csproj",
       "packagesPath": "C:\\Users\\a\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\a\\Desktop\\Shop\\Shop\\obj\\",
+      "outputPath": "C:\\Users\\a\\Downloads\\Compressed\\Shop__Swagger-main\\Shop\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\a\\AppData\\Roaming\\NuGet\\NuGet.Config",
